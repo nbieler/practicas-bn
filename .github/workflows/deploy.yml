@@ -2,7 +2,7 @@ name: Deploy
 
 on: push
 
-concurrency:
+concurrency: 
   group: deploy-${{ github.ref }}
   cancel-in-progress: true
 
